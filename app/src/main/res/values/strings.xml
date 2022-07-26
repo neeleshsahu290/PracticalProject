@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Practical Project</string>
+    <string name="title_home">Home</string>
+    <string name="title_wishlist">Wishlist</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_collection">Collection</string>
+</resources>

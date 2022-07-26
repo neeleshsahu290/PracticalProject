@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+  <FrameLayout
+      android:id="@+id/framedashboard"
+      app:layout_constraintTop_toTopOf="parent"
+      android:background="@drawable/topbox"
+      android:layout_width="match_parent"
+      android:layout_height="200dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_20sdp"
+        android:layout_height="match_parent">
+      <TextView
+          android:id="@+id/txtdashboard"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:text="MY Dashbosrd"/>
+      <ImageView
+          android:id="@+id/imgprofile"
+        android:background="@drawable/ic_outline_perm_identity_24"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="@id/txtdashboard"
+        app:layout_constraintBottom_toBottomOf="@id/txtdashboard"
+        app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"/>
+      <ImageView
+          android:id="@+id/imgmessage"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintEnd_toStartOf="@id/imgprofile"
+        app:layout_constraintBottom_toBottomOf="@id/imgprofile"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="@id/imgprofile"
+        android:background="@drawable/ic_outline_local_post_office_24"/>
+      <ImageView
+          android:id="@+id/notification"
+          android:layout_margin="@dimen/_5sdp"
+          app:layout_constraintEnd_toStartOf="@id/imgmessage"
+          app:layout_constraintBottom_toBottomOf="@id/imgmessage"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"
+          app:layout_constraintTop_toTopOf="@id/imgmessage"
+          android:background="@drawable/ic_baseline_notifications_none_24"/>
+      <ImageView
+          android:layout_margin="@dimen/_5sdp"
+          app:layout_constraintEnd_toStartOf="@id/notification"
+          app:layout_constraintBottom_toBottomOf="@id/notification"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"
+          app:layout_constraintTop_toTopOf="@id/notification"
+          android:background="@drawable/ic_baseline_search_24"/>
+      <View
+          android:id="@+id/middleview"
+        app:layout_constraintTop_toBottomOf="@id/txtdashboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+          android:layout_width="1dp"
+          android:layout_height="1dp"/>
+      <androidx.cardview.widget.CardView
+          app:layout_constraintEnd_toStartOf="@id/middleview"
+          android:layout_marginVertical="@dimen/_10sdp"
+          android:layout_marginEnd="@dimen/_10sdp"
+          android:layout_marginStart="@dimen/_20sdp"
+          android:layout_width="0dp"
+          app:cardBackgroundColor="@color/purple_200"
+          android:layout_height="0dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:elevation="@dimen/_10sdp"
+          app:cardCornerRadius="@dimen/_10sdp"
+
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/txtdashboard">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_3sdp"
+            android:background="@drawable/boxbackground">
+          <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            android:text="Scan"
+              android:id="@+id/txtscan"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"/>
+          <ImageView
+            app:layout_constraintTop_toTopOf="@id/txtscan"
+            app:layout_constraintBottom_toBottomOf="@id/txtscan"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_forward_24"/>
+          <TextView
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/txtscan"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+              android:layout_marginBottom="@dimen/_3sdp"
+            android:textColor="@color/white"
+            android:text="vfdvokfdfv fhweifjfw eifhwo ewfbjfw "/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </androidx.cardview.widget.CardView>
+      <androidx.cardview.widget.CardView
+          app:layout_constraintBottom_toBottomOf="parent"
+
+          app:layout_constraintStart_toEndOf="@id/middleview"
+          android:layout_marginVertical="@dimen/_10sdp"
+          android:layout_marginStart="@dimen/_10sdp"
+          android:layout_marginEnd="@dimen/_20sdp"
+          android:layout_width="0dp"
+          app:cardBackgroundColor="@color/purple_200"
+          android:layout_height="0dp"
+          android:elevation="@dimen/_10sdp"
+          app:cardCornerRadius="@dimen/_10sdp"
+
+          app:layout_constraintEnd_toEndOf="parent"
+
+          app:layout_constraintTop_toBottomOf="@id/txtdashboard">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_3sdp"
+            android:background="@drawable/boxbackground">
+          <TextView
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Sell"
+              android:id="@+id/txtsell"
+              android:layout_margin="@dimen/_5sdp"
+              android:textColor="@color/white"
+              android:textSize="@dimen/_14sdp"/>
+          <ImageView
+              app:layout_constraintTop_toTopOf="@id/txtsell"
+              app:layout_constraintBottom_toBottomOf="@id/txtsell"
+              android:layout_margin="@dimen/_5sdp"
+              app:layout_constraintEnd_toEndOf="parent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@drawable/ic_baseline_arrow_forward_24"/>
+          <TextView
+              android:layout_margin="@dimen/_5sdp"
+              app:layout_constraintTop_toBottomOf="@id/txtsell"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="@dimen/_10sdp"
+              android:layout_marginBottom="@dimen/_3sdp"
+              android:textColor="@color/white"
+              android:text="vfdvokfdfv fhweifjfw eifhwo ewfbjfw "/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </FrameLayout>
+
+  <TextView
+      android:id="@+id/txtavalibletobuy"
+      android:textStyle="bold"
+      android:textColor="@color/purple_200"
+      android:textSize="@dimen/_18sdp"
+      android:layout_marginTop="@dimen/_20sdp"
+      android:layout_marginStart="@dimen/_20sdp"
+      android:text="Avaliable to buy"
+    app:layout_constraintTop_toBottomOf="@id/framedashboard"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <TextView
+android:layout_marginEnd="@dimen/_20sdp"
+    app:layout_constraintTop_toTopOf="@+id/txtavalibletobuy"
+    app:layout_constraintBottom_toBottomOf="@+id/txtavalibletobuy"
+    app:layout_constraintEnd_toEndOf="parent"
+      android:layout_width="wrap_content"
+      android:textSize="@dimen/_12sdp"
+      android:textColor="#4370E6"
+      android:layout_height="wrap_content"
+    android:text="See all"/>
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/coinsRecycler"
+      android:nestedScrollingEnabled="false"
+      android:visibility="gone"
+
+    android:layout_margin="@dimen/_10sdp"
+    app:layout_constraintTop_toBottomOf="@id/txtavalibletobuy"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+  <include
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      android:id="@+id/nointernet"
+      app:layout_constraintTop_toBottomOf="@id/txtavalibletobuy"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      layout="@layout/no_internet"
+      />
+  <ProgressBar
+      android:id="@+id/progress"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_width="@dimen/_25sdp"
+      android:layout_height="@dimen/_25sdp"
+      app:layout_constraintTop_toBottomOf="@id/txtavalibletobuy"
+      app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.core.widget.NestedScrollView>
